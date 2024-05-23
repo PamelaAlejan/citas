@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citas Medicas</title>
+
+</head>
+
+<body>
+    <h1>Citas Medicas</h1>
+
+    <h1>Usuarios Femeninos</h1>
+    {{#if females}}
+    <ul>
+        {{#each females}}
+        <li>Nombre: {{first}} - Apellido: {{last}} - ID: {{id}} - Timestamp: {{timestamp}} - Sexo: {{gender}}</li>
+        {{/each}}
+    </ul>
+    {{else}}
+    <p>No hay usuarios femeninos.</p>
+    {{/if}}
+
+    <h1>Usuarios Masculinos</h1>
+    {{#if males}}
+    <ul>
+        {{#each males}}
+        <li>Nombre: {{first}} - Apellido: {{last}} - ID: {{id}} - Timestamp: {{timestamp}} - Sexo: {{gender}}</li>
+        {{/each}}
+    </ul>
+    {{else}}
+    <p>No hay usuarios masculinos.</p>
+    {{/if}}
+</body>
+
+</html>

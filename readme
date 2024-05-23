@@ -1,0 +1,65 @@
+"name"{
+    "title": "Miss",
+    "first": "Jennie",
+    "last": "Nichols"
+}
+        "id": {
+    "name": "SSN",
+    "value": "405-88-3636"
+}
+
+
+{
+    {#each items
+    }
+}
+{
+    {#if 'female'
+    }
+}
+
+Nombre: {
+    {first
+    }
+} - Apellido: {
+    {last
+    }
+} - ID: {
+    {id
+    }
+} - Timestamp: {
+    {timestamp
+    }
+} - Sexo: {
+    {gender
+    }
+}
+{
+    {else
+    }
+}
+<h1>Masculinos</h1>
+Nombre: {
+    {first
+    }
+} - Apellido: {
+    {last
+    }
+} - ID: {
+    {id
+    }
+} - Timestamp: {
+    {timestamp
+    }
+} - Sexo: {
+    {gender
+    }
+}
+{
+    {/if
+    }
+}
+{
+    {/each
+    }
+}
